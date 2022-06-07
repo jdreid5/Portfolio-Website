@@ -6,33 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jon Reid Portfolio Website</title>
     <link href="./resources/style.css" rel="stylesheet">
+    <script src="./resources/script.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#anchorDiv1">ABOUT ME</a></li>
+                <li><a href="#anchorDiv2">PROJECTS</a></li>
+                <li><a href="#anchorDiv3">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>   
         <section id="welcome">
             <div id="nameStatement">
-                <h1 class="names">Jon Reid</h1>
-                <h3 class="names">ASPIRING FULL-STACK DEVELOPER</h3>
+                <h1 class="names animate__animated animate__fadeInDown">Jon Reid.</h1>
+                <h3 class="names animate__animated animate__fadeInLeft">ASPIRING FULL-STACK DEVELOPER</h3>
             </div>
+            <div id="emptySquare"></div>
+            <div id="emptySide" ></div>
+            <div id="trapezoid1" class="animate__animated animate__slideInLeft"></div>
+            <div id="trapezoid2" class="animate__animated animate__fadeInLeft animate__delay-1s"></div>
+            <div id="trapezoid3" class="animate__animated animate__fadeInLeft animate__delay-1s"></div>
+            <div id="vertBar" class="animate__animated animate__slideInDown"></div>
+            <div id="selfImage" class="animate__animated animate__slideInDown">
+                <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" style="enable-background:new 0 0 1792 1792" xml:space="preserve">
+                    <path d="M983.3 1532.1c-23.2 23.6-55.6 35.9-88.6 33.6-31.9 2.4-63-10-84.6-33.6L261.8 985.8c-45.4-45.4-45.4-119 0-164.4s119-45.4 164.4 0l354.4 354.4V342.1c-.4-63.8 51-115.8 114.8-116.1h.7c64 .4 115.8 52.1 116.1 116.1v833.6l353.7-354.4c45.4-45.4 119-45.4 164.4 0 45.4 45.4 45.4 119 0 164.4l-547 546.4z" fill="#ef233c"/>
+                </svg>
+            </div>
+            <div id="onclick"></div>
         </section>
+        <div id="anchorDiv1"></div>
+        <svg id="#topAbout" width="100%" height="100%" id="svg" viewBox="0 130 1440 100" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+            <path d="M 0,400 C 0,400 0,200 0,200 C 118.66666666666669,172 237.33333333333337,144 418,149 C 598.6666666666666,154 841.3333333333333,192.00000000000003 1022,206 C 1202.6666666666667,219.99999999999997 1321.3333333333335,210 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ef233c" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>
         <section id="about">
+            <div id="aboutImg">
+                <img src="./resources/images/PXL_20220607_102958213_21.jpg" alt="photo of Jon Reid">
+            </div>
             <div id="aboutText">
-                <h2>About Me.</h2>
-                <p>Lorem Ipsum yadda yadda</p>
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel efficitur leo. Nulla eget eros vitae ipsum varius sollicitudin ut at enim. In sed blandit lacus. Ut sollicitudin tortor tincidunt, aliquam massa non, vulputate ipsum. Aliquam erat volutpat. Proin nec congue risus. Nunc non augue turpis. Aliquam eget vestibulum turpis, at commodo sapien. Duis eget dui lectus. Suspendisse ac risus sed sapien posuere porttitor ullamcorper quis dolor. 
+                <br><br>
+                Praesent sit amet enim nisl. Donec felis magna, sollicitudin ac justo a, porta consequat urna. Aenean sit amet sem tempor magna iaculis lacinia eget ac tellus. Vivamus quis ante eu arcu aliquet cursus id vitae leo. Nulla mi ex, efficitur vitae pellentesque ut, sagittis vitae lectus. Aenean pretium velit in velit tincidunt, eget malesuada justo efficitur. Duis dui metus, venenatis at hendrerit sed, ullamcorper nec ligula. Sed porttitor, sem eget condimentum porta, augue magna egestas elit, vel pretium elit massa ut odio.
+                </p>
             </div>
         </section>
+        <svg width="100%" height="100%" id="svg" viewBox="0 130 1440 90" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" transform="rotate(180)">
+            <path d="M 0,400 C 0,400 0,200 0,200 C 118.66666666666669,172 237.33333333333337,144 418,149 C 598.6666666666666,154 841.3333333333333,192.00000000000003 1022,206 C 1202.6666666666667,219.99999999999997 1321.3333333333335,210 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ef233c" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>
+        <div id="anchorDiv2"></div>   
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
             <div id="projectContainer">
                 <div class="projectTabs"></div>
                 <div class="projectTabs"></div>
@@ -40,9 +71,16 @@
                 <div class="projectTabs"></div>
             </div>
         </section>
+        <svg width="100%" height="100%" id="svg" viewBox="0 130 1440 100" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+            <path d="M 0,400 C 0,400 0,200 0,200 C 118.66666666666669,172 237.33333333333337,144 418,149 C 598.6666666666666,154 841.3333333333333,192.00000000000003 1022,206 C 1202.6666666666667,219.99999999999997 1321.3333333333335,210 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ef233c" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>
+        <div id="anchorDiv3"></div> 
         <section id="skills">
             <h2>Skills</h2>
         </section>
+        <svg width="100%" height="100%" id="svg" viewBox="0 130 1440 90" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" transform="rotate(180)">
+            <path d="M 0,400 C 0,400 0,200 0,200 C 118.66666666666669,172 237.33333333333337,144 418,149 C 598.6666666666666,154 841.3333333333333,192.00000000000003 1022,206 C 1202.6666666666667,219.99999999999997 1321.3333333333335,210 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ef233c" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>        
         <section id="contact">
             <h2>Contact Me</h2>
             <form>
@@ -54,7 +92,7 @@
         </section>
     </main>
     <footer>
-        <h4>&copy; Jon Reid 2022</h4>
-    </footer> 
+        <p>&copy; Jon Reid 2022</p>
+    </footer>
 </body>
 </html>
